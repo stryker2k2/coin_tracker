@@ -2,17 +2,17 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 Using Coinbase Advanced API Python SDK which can be found at:\
-https://github.com/coinbase/coinbase-advanced-py\
+https://github.com/coinbase/coinbase-advanced-py \
 https://docs.cdp.coinbase.com/advanced-trade/docs/welcome/
 
 ## Linting
-``` bash
+``` markdown
 # https://pypi.org/project/ruff/
 ruff check . --fix
 ```
 
 ## Installing
-``` bash
+``` markdown
 # Windows
 python3 -m pip install virtualenv
 python3 -m virtualenv venv
@@ -27,14 +27,14 @@ source ./venv/bin/activate
 ```
 
 ## Running
-Make a 'keys' folder and place your Coinbase API JSON Key (cdp_api_key.json) inside. Text will be output to your terminal (stdout) and inside the 'output' folder.
-``` bash
+Make a 'keys' folder and place your Coinbase API JSON Key (cdp_api_key.json) inside. The output will show in your terminal (stdout) and inside the 'output' folder.
+``` markdown
 # Windows
 (venv) python app.py
 ```
 
 ## Output
-``` bash
+``` markdown
 JSON Output: ./output/accounts/accounts.json
 
 Market
