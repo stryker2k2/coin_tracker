@@ -27,9 +27,8 @@ def get_assets():
                 print(f"{acct.currency}: {float(acct.available_balance['value']):.2f} (${(float(product.price) * float(acct.available_balance['value'])):.2f})")
 
 # Get Product & Print Price
-def get_stock_price():
-    my_products = ["TRUMP-USDC", "BTC-USDC", "XRP-USDC", "MORPHO-USDC", "ETH-USDC"]
-    product = client.get_product(my_products[4])
+def get_coin_price(my_product):
+    product = client.get_product(my_product)
     print("\nMarket")
     print(f"{product.product_id}: ${product.price} / coin")
     os.makedirs("output/products", exist_ok=True)
@@ -60,8 +59,8 @@ def buy_coins():
     else:
         print("\nPurchase canceled\n")
 
-# get_accts()
-# get_stock_price()
+get_accts()
+get_coin_price("ETH-USDC")
 get_assets()
 buy_coins()
 print("\n")
